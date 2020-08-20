@@ -18,6 +18,14 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
     <dependencies>
     <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
@@ -46,20 +54,14 @@
             <version>42.2.14</version>
         </dependency>
         <dependency>
-            <groupId> com.oracle </groupId>
-            <artifactId> ojdbc14 </artifactId>
-            <version> 11.2.0 </version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.6</version>
         </dependency>
     </dependencies>
-        <url>http://www.oracle.com/technology/software/tech/java/sqlj_jdbc/index.html</url>
-        <licenses>
-            <license>
-                <name>Oracle Technology Network Development and Distribution License Terms</name>
-                <url>http://www.oracle.com/technology/software/htdocs/distlic.html</url>
-            </license>
-        </licenses>
-        <organization>
-            <name>Oracle Corporation</name>
-            <url>http://www.oracle.com</url>
-        </organization>
 </project>
